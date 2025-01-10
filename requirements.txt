@@ -1,6 +1,8 @@
 # Backend frameworks
 Flask==2.2.5
 gunicorn==20.1.0  # For production server deployment
+flask-cors==3.0.10
+
 
 # NLP and AI tools
 spacy==3.6.0
