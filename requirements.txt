@@ -1,33 +1,36 @@
 # Backend frameworks
 Flask==2.2.5
-gunicorn==20.1.0  # For production server deployment
-flask-cors==3.0.10
-
+flask-cors==3.0.10  # CORS support
+gunicorn==20.1.0  # Production server deployment
 
 # NLP and AI tools
-spacy==3.6.0
+openai==0.28.1  # For interacting with OpenAI's GPT models
+spacy==3.6.0  # Natural language processing
 langchain==0.0.237  # For LLM-based conversational AI
 transformers==4.31.0  # For advanced language models (optional, if needed)
-nltk==3.8.1  # For basic NLP tasks
+nltk==3.8.1  # Basic NLP tasks
 
 # Translation support
-deep-translator==1.8.3  # API-based translation library
+deep-translator==1.8.3  # Translation library
 
 # API and database handling
 requests==2.31.0  # HTTP requests for APIs
 firebase-admin==6.1.0  # Database management (medicine orders, etc.)
 SQLAlchemy==2.0.21  # ORM for database integration
 
+# Cryptography and security
+cryptography==41.0.2  # For data encryption/decryption
+
 # Data handling
 pandas==2.0.3  # Data manipulation
 numpy==1.24.4  # Numerical computations
 
-# Deployment and utility
+# Deployment and utilities
+werkzeug==2.3.7  # Utilities for WSGI applications (includes secure_filename)
 uvicorn==0.23.0  # ASGI server (alternative to gunicorn for async support)
 
 # Optional for development and debugging
 jupyter==1.0.0  # Jupyter notebook for testing/debugging
 ipywidgets==8.1.0  # Interactive widgets for Jupyter
 
-# Remove if not needed
-httpx==0.24.0  # Alternative to requests, only if async API support is required
+# Logging (already included in Python standard library, no need to install)
